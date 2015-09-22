@@ -1,7 +1,7 @@
 {
   "name": "no-utils",
   "main": "no-utils.js",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Utilities for no modules.",
   "author": "Joseph Spencer",
   "scripts": {
