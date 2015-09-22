@@ -10,18 +10,19 @@ describe('no-utils', function() {
     it('should remove matching array items', function() {
       var input = [1,2,3,4,5];
 
-      noUtils.transform(input, function(input) {return input === 5;});
-      input.length.should.equal(4);
-      input.should.equal(input);
-      input[3].should.equal(4);
+      var result = noUtils.transform(input, function(input) {return input === 5;});
+      result.length.should.equal(4);
+      result.should.not.equal(input);
+      result[3].should.equal(4);
     });
 
     it('should remove matching object values', function() {
       var input = {foo: 5, boo: 6};
 
-      noUtils.transform(input, function(input) {return input === 5;});
-      expect(input.foo).to.be.undefined;
-      input.boo.should.equal(6);
+      var result = noUtils.transform(input, function(input) {return input === 5;});
+      expect(result.foo).to.be.undefined;
+      result.boo.should.equal(6);
+      result.should.not.equal(input);
     });
 
     it('should return null for all other matches', function() {

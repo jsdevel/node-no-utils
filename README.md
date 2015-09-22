@@ -3,7 +3,7 @@
 
 ## .transform(input, testFn)
 
-* Removes values from arrays and objects when testFn returns `true`.
+* Returns objects and arrays without values that trip the testFn.
 * Returns null for all other values when testFn returns `true`.
 
 ##LICENSE
