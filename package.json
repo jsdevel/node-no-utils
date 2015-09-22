@@ -1,0 +1,33 @@
+{
+  "name": "no-utils",
+  "main": "no-utils.js",
+  "version": "0.5.0",
+  "description": "Utilities for no modules.",
+  "author": "Joseph Spencer",
+  "scripts": {
+    "pretest": "jshint index.js test.js",
+    "cover": "istanbul cover _mocha -- ./test.js && cat ./coverage/lcov.info | coveralls -v && rm -rf coverage",
+    "test": "mocha -w ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdevel/node-no-utils.git"
+  },
+  "keywords": [
+    "no",
+    "utils"
+  ],
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsdevel/node-no-utils/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.20",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {}
+}
