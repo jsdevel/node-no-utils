@@ -1,6 +1,6 @@
 {
   "name": "no-utils",
-  "main": "no-utils.js",
+  "main": "index.js",
   "version": "1.0.0",
   "description": "Utilities for no modules.",
   "author": "Joseph Spencer",
